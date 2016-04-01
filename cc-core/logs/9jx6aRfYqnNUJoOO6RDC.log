@@ -1,0 +1,71 @@
+
+
+
+
+==================================================================
+FASTSTART
+==================================================================
+
+Faststart Command: /var/www/html/cumulusclips/cc-core/system/bin/ffmpeg-64-bit/qt-faststart /var/www/html/cumulusclips/cc-content/uploads/mobile/9jx6aRfYqnNUJoOO6RDC_temp.mp4 /var/www/html/cumulusclips/cc-content/uploads/mobile/9jx6aRfYqnNUJoOO6RDC.mp4 >> /var/www/html/cumulusclips/cc-core/logs/9jx6aRfYqnNUJoOO6RDC.log 2>&1Faststart Output:
+
+
+ftyp          0 32
+free         32 8
+mdat         40 825192
+moov     825232 12358
+ patching stco atom...
+ patching stco atom...
+ writing ftyp atom...
+ writing moov atom...
+ copying rest of file...
+
+
+
+
+==================================================================
+THUMB CREATION
+==================================================================
+
+Thumb Creation Command: /var/www/html/cumulusclips/cc-core/system/bin/ffmpeg-64-bit/ffmpeg -i /var/www/html/cumulusclips/cc-content/uploads/temp/9jx6aRfYqnNUJoOO6RDC.mp4 -ss 7 -vf "scale=min(640\,iw):trunc(ow/a/2)*2" -t 1 -r 1 -f mjpeg /var/www/html/cumulusclips/cc-content/uploads/thumbs/9jx6aRfYqnNUJoOO6RDC.jpg >> /var/www/html/cumulusclips/cc-core/logs/9jx6aRfYqnNUJoOO6RDC.log 2>&1Thumb Creation Output:
+
+
+ffmpeg version 2.8.5-static http://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2016 the FFmpeg developers
+  built with gcc 4.9.3 (Debian 4.9.3-10)
+  configuration: --enable-gpl --enable-version3 --disable-shared --disable-debug --enable-runtime-cpudetect --enable-libmp3lame --enable-libx264 --enable-libx265 --enable-libwebp --enable-libspeex --enable-libvorbis --enable-libvpx --enable-libfreetype --enable-fontconfig --enable-libxvid --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libtheora --enable-libvo-aacenc --enable-libvo-amrwbenc --enable-gray --enable-libopenjpeg --enable-libopus --enable-libass --enable-gnutls --enable-libvidstab --enable-libsoxr --enable-frei0r --enable-libfribidi --disable-indev=sndio --disable-outdev=sndio --cc=gcc-4.9
+  libavutil      54. 31.100 / 54. 31.100
+  libavcodec     56. 60.100 / 56. 60.100
+  libavformat    56. 40.101 / 56. 40.101
+  libavdevice    56.  4.100 / 56.  4.100
+  libavfilter     5. 40.101 /  5. 40.101
+  libswscale      3.  1.101 /  3.  1.101
+  libswresample   1.  2.101 /  1.  2.101
+  libpostproc    53.  3.100 / 53.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/html/cumulusclips/cc-content/uploads/temp/9jx6aRfYqnNUJoOO6RDC.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf55.19.104
+  Duration: 00:00:13.60, start: 0.023220, bitrate: 637 kb/s
+    Stream #0:0(eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720, 505 kb/s, 25 fps, 25 tbr, 12800 tbn, 50 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+    Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 125 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+[swscaler @ 0x3894f80] deprecated pixel format used, make sure you did set range correctly
+Output #0, mjpeg, to '/var/www/html/cumulusclips/cc-content/uploads/thumbs/9jx6aRfYqnNUJoOO6RDC.jpg':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf56.40.101
+    Stream #0:0(eng): Video: mjpeg, yuvj420p(pc), 640x360, q=2-31, 200 kb/s, 1 fps, 1 tbn, 1 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc56.60.100 mjpeg
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+Press [q] to stop, [?] for help
+frame=    0 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A    frame=    0 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A    frame=    0 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A    frame=    1 fps=0.5 q=5.0 Lsize=       8kB time=00:00:01.00 bitrate=  66.7kbits/s    
+video:8kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000000%
