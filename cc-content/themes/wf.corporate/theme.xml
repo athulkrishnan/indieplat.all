@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-    <author>CumulusClips</author>
+    <author>Athul Krishnan</author>
     <name>Corporate Base</name>
     <mobile>false</mobile>
-    <description>Corporate theme for CumulusClips</description>
+    <description>Corporate clone for adding features and testing</description>
     <version>1.0</version>
     <update>http://athulkrishnan.com/</update>
 </theme>
