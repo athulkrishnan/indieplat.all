@@ -166,7 +166,7 @@ $this->setLayout('full');
                         <div class="col-xs-12 col-sm-10 media">
                             <div class="media-left">
                                 <?php $avatar = $this->getService('User')->getAvatarUrl($member); ?>
-                                <img class="media-object" width="65" height="65" src="<?=($avatar) ? $avatar : $this->options->themeUrl . '/images/avatar.gif'?>" alt="<?=$member->username?>" />
+                                <img class="media-object" width="65" height="65" src="<?=($avatar) ? $avatar : $this->options->themeUrl . '/images/avatar.png'?>" alt="<?=$member->username?>" />
                             </div>
                             <div class="media-body">
                                 <p><strong><?=Language::getText('by')?>:</strong> <a href="<?=HOST?>/members/<?=$member->username?>/" title="<?=$member->username?>"><?=$member->username?></a></p>
