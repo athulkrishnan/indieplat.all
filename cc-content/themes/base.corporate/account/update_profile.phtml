@@ -56,7 +56,7 @@ $this->SetLayout('account');
 
         <div class="col-xs-12 col-md-2">
             <?php $avatar = $this->getService('User')->getAvatarUrl($loggedInUser); ?>
-            <p class="avatar"><span><img alt="<?=Language::GetText('current_avatar')?>" src="<?=($avatar) ? $avatar : $this->options->themeUrl . '/images/avatar.gif'?>"></span></p>
+            <p class="avatar"><span><img alt="<?=Language::GetText('current_avatar')?>" src="<?=($avatar) ? $avatar : $this->options->themeUrl . '/images/avatar.png'?>"></span></p>
             <?=Language::GetText('current_avatar')?><br />
             <a class="confirm" data-node="confirm_reset_avatar" href="<?=HOST?>/account/profile/reset/"><?=Language::GetText('reset_avatar')?></a>
         </div>
@@ -70,7 +70,7 @@ $this->SetLayout('account');
                 </div>
                 <input id="upload_button" class="btn btn-primary" type="button" value="<?=Language::GetText('update_avatar_button')?>" />
                 <input type="hidden" name="timestamp" value="<?=$timestamp?>" />
-                <input type="hidden" name="upload-limit" id="upload-limit" value="<?=1024*30?>" />
+                <input type="hidden" name="upload-limit" id="upload-limit" value="<?=1024*3000?>" />
                 <input type="hidden" name="file-types" id="file-types" value="<?=htmlspecialchars(json_encode($config->acceptedAvatarFormats))?>" />
                 <input type="hidden" name="upload-type" id="upload-type" value="avatar" />
 
