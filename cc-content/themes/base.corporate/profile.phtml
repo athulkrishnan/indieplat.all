@@ -8,7 +8,8 @@ $this->setLayout('full');
 
 <div class="alert hidden"></div>
 
-<h1><?=$member->username?></h1>
+<h1><?=nl2br($member->lastName)?></h1><h1><?=nl2br($member->firstName)?></h1>
+<h3><?=$member->username?></h3>
 <!-- <h1><?=$member->first_name?></h1><h1><?=$member->last_name?></h1> -->
 
 <!-- BEGIN Member Avatar/Profile Information -->
@@ -37,11 +38,6 @@ $this->setLayout('full');
             
             <a class="flag" data-type="user" data-id="<?=$member->userId?>" href="" title="<?=Language::GetText('report_abuse')?>"><?=Language::GetText('report_abuse')?></a>&nbsp;&nbsp;&nbsp;
         </p>
-
-  <p><strong>About: </strong><?=nl2br($member->lastName)?></p>
-  <input class="form-control" type="text" name="last_name" value="<?=htmlspecialchars($user->lastName)?>" />
-
-
     </div>
 </div>
 <!-- END Member Avatar/Profile Information -->
