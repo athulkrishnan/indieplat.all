@@ -18,7 +18,7 @@ $this->setLayout('full');
         <img class="media-object" src="<?=($avatar) ? $avatar : $this->options->themeUrl . '/images/avatar.png'?>" alt="<?=$member->username?>" />
         <a class="btn btn-primary btn-sm subscribe" data-user="<?=$member->userId?>" data-type="<?=$subscribe_text?>" href=""><?=Language::GetText($subscribe_text)?></a>
 
-        <a class="btn btn-primary btn-sm subscribe" href="<?=HOST?>/account/message/send/<?=$member->username?>/" title="<?=Language::GetText('send_message')?>"><?=Language::GetText('send_message')?>
+        <a class="btn btn-primary btn-sm subscribe" href="<?=HOST?>/account/message/send/<?=$member->username?>/" title="<?=Language::GetText('send_message')?>"><?=Language::GetText('send_message')?></a>
 
 
     </div>
