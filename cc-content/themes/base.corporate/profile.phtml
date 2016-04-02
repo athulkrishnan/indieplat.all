@@ -21,6 +21,9 @@ $this->setLayout('full');
         <br>
 
         <a class="btn btn-primary btn-sm subscribe" href="<?=HOST?>/account/message/send/<?=$member->username?>/" title="<?=Language::GetText('send_message')?>"><?=Language::GetText('send_message')?></a>
+
+        <br>
+
         <a class="btn btn-primary btn-sm subscribe" class="flag" data-type="user" data-id="<?=$member->userId?>" href="" title="<?=Language::GetText('report_abuse')?>"><?=Language::GetText('report_abuse')?></a>
 
 
