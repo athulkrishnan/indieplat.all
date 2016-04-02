@@ -9,7 +9,6 @@ $this->setLayout('full');
 <div class="alert hidden"></div>
 
 <h1><?=nl2br($member->firstName)?> <?=nl2br($member->lastName)?></h1>
-<h3><?=$member->username?></h3>
 <!-- <h1><?=$member->first_name?></h1><h1><?=$member->last_name?></h1> -->
 
 <!-- BEGIN Member Avatar/Profile Information -->
@@ -26,6 +25,7 @@ $this->setLayout('full');
 
     </div>
     <div class="media-body">
+        <p><strong>Username: </strong><?=$member->username?></p>
         <p><strong><?=Language::GetText('joined')?>:</strong>&nbsp; <?=date('m/d/Y', strtotime($member->dateCreated))?></p>
         <p><strong><?=Language::GetText('profile_views')?>:</strong>&nbsp; <?=$member->views?></p>
         <p><strong><?=Language::GetText('subscribers')?>:</strong>&nbsp; <?php echo $sub_count[0]; ?></p>
