@@ -70,7 +70,7 @@ $this->SetLayout('account');
                 </div>
                 <input id="upload_button" class="btn btn-primary" type="button" value="<?=Language::GetText('update_avatar_button')?>" />
                 <input type="hidden" name="timestamp" value="<?=$timestamp?>" />
-                <input type="hidden" name="upload-limit" id="upload-limit" value="<?=1024*3000?>" />
+                <input type="hidden" name="upload-limit" id="upload-limit" value="<?=1024*1024?>" />
                 <input type="hidden" name="file-types" id="file-types" value="<?=htmlspecialchars(json_encode($config->acceptedAvatarFormats))?>" />
                 <input type="hidden" name="upload-type" id="upload-type" value="avatar" />
 
