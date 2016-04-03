@@ -8,24 +8,18 @@
 <meta name="themeUrl" content="<?=$this->options->themeUrl?>" />
 <?php $this->writeMeta(); ?>
 <?php Plugin::triggerEvent('theme.head'); ?>
-<link rel="shortcut icon" type="image/x-icon" href="<?=$this->options->themeUrl?>/images/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Loading Bootstrap -->
+<link rel="stylesheet" type="text/css" href="<?=$this->options->themeUrl?>/css/vendor/bootstrap.min.css" rel="stylesheet">
+<!-- Loading Flat UI Pro -->
+<link rel="stylesheet" type="text/css" href="<?=$this->options->themeUrl?>/css/flat-ui-pro.css" rel="stylesheet">
+<!-- <link rel="shortcut icon" type="image/x-icon" href="<?=$this->options->themeUrl?>/images/favicon.ico" />
 <link rel="stylesheet" type="text/css" href="<?=$this->options->themeUrl?>/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="<?=$this->options->themeUrl?>/css/main.css" />
-<link rel="stylesheet" type="text/css" href="<?=$this->options->themeUrl?>/css/account.css" />
-<link rel="stylesheet" type="text/css" href="<?=$this->options->themeUrl?>/css/responsive.css" />
+<link rel="stylesheet" type="text/css" href="<?=$this->options->themeUrl?>/css/pages.css" />
+<link rel="stylesheet" type="text/css" href="<?=$this->options->themeUrl?>/css/responsive.css" /> -->
 <link rel="stylesheet" type="text/css" href="<?=$this->options->themeUrl?>/css/videojs-sublime-skin.min.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
- <!-- Annotator -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-        <script src="http://assets.annotateit.org/annotator/v1.2.5/annotator-full.min.js"></script>
-        <link rel="stylesheet" href="http://assets.annotateit.org/annotator/v1.2.5/annotator.min.css">
-
-<!--RangeSlider Pluging-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.1.1/rangeslider.min.js"></script>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.1.1/rangeslider.min.css">
-
-<!--Annotations Pluging-->
-        <link rel="stylesheet" type="text/css" href="<?=$this->options->themeUrl?>/css/annotator.min.css" />
 
 <?php $this->writeCSS(); ?>
 
