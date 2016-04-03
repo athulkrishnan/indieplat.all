@@ -2,7 +2,7 @@
 <theme>
     <author>Athul Krishnan</author>
     <name>Corporate Base</name>
-    <mobile>false</mobile>
+    <mobile>true</mobile>
     <description>Corporate clone for adding features and testing</description>
     <version>1.0</version>
     <update>http://athulkrishnan.com/</update>
