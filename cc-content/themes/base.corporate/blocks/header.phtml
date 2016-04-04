@@ -22,7 +22,7 @@
 
                 <?php if ($loggedInUser): ?>
 
-                    <a href="<?=HOST?>/account/" title="<?=Language::GetText('account')?>"><?=Language::GetText('account')?></a>
+                    <a href="<?=HOST?>/account/" title="<?=Language::GetText('account')?>">Profile<!-- <?=Language::GetText('account')?> --></a>
                     <?php if ($this->getService('User')->checkPermissions('admin_panel', $loggedInUser)): ?>
                         <a href="<?=HOST?>/cc-admin/" title="<?=Language::GetText('admin_panel')?>"><?=Language::GetText('admin_panel')?></a>
                     <?php endif ?>
@@ -103,7 +103,7 @@
         <div class="row">
 
             <div class="header-left col-md-6 hidden-xs hidden-sm">
-                <a class="logo" href="<?=HOST?>/" title="CumulusClips - Free Video Sharing CMS, Video Sharing Script, YouTube Clone Script">CumulusClips - Free Video Sharing CMS, Video Sharing Script, YouTube Clone Script</a>
+                <a class="logo" href="<?=HOST?>/" title="CumulusClips - Free Video Sharing CMS, Video Sharing Script, YouTube Clone Script">IndiePlat</a>
             </div>
 
             <!-- BEGIN Search Form -->
