@@ -83,7 +83,7 @@
     <h1>Latest Films</h1>
     <div class="video-list">
         <?php if (!empty ($recent_videos)): ?>
-            <?php $this->repeatingBlock('video.phtml', array_slice($recent_videos, 0, 4)); ?>
+            <?php $this->repeatingBlock('video.phtml', array_slice($recent_videos, 0, 8)); ?>
         <?php else: ?>
             <div class="block"><strong><?=Language::getText('no_videos')?></strong></div>
         <?php endif; ?>
