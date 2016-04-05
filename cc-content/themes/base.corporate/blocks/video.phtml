@@ -8,7 +8,7 @@
         </a>
     </div>
     <div class="info">
-        <a href="<?=VideoService::getUrl($video)?>/" title="<?=$video->title?>"><?=$video->title?></a>
+        <span class="glyphicon facetime-video"></span><a href="<?=VideoService::getUrl($video)?>/" title="<?=$video->title?>"><?=$video->title?></a>
         
         <!-- <a href="<?=HOST?>/members/<?=$member->username?>/" title="<?=$member->username?>"><?=Functions::CutOff($member->username,18)?></a> -->
         <span class="duration"><span class="glyphicon glyphicon-time"></span><?=$video->duration?></span>
