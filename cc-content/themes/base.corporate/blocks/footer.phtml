@@ -19,8 +19,8 @@
                     <?php if ($config->enableUserUploads): ?>
                         <a href="<?=HOST?>/account/upload/" title="<?=Language::GetText('upload')?>"><?=Language::GetText('upload')?></a> |
                     <?php endif; ?>
-                    <a href="<?=HOST?>/contact/" title="<?=Language::GetCustomText('contact')?>"><?=Language::GetCustomText('contact')?></a> |
-                    <a href="<?=HOST?>/video-sitemap.xml" title="<?=Language::GetCustomText('sitemap')?>"><?=Language::GetCustomText('sitemap')?></a>
+                    <a href="<?=HOST?>/contact/" title="<?=Language::GetCustomText('contact')?>"><?=Language::GetCustomText('contact')?></a>
+                    <!-- <a href="<?=HOST?>/video-sitemap.xml" title="<?=Language::GetCustomText('sitemap')?>"><?=Language::GetCustomText('sitemap')?></a> -->
                     <?php $activeLanguages = Language::getActiveLanguages(); ?>
                     <?php if (count($activeLanguages) > 1): ?>
 
