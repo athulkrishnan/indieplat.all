@@ -62,8 +62,8 @@
 
 <!-- Begin Featured Videos -->
 <div class="featured-videos">
-
-    <h1><?=Language::getText('featured_videos')?></h1>
+    <!-- <h1><?=Language::getText('featured_videos')?></h1> -->
+    <h1>Curator's Picks</h1>
     <div class="video-list">
         <?php if (!empty ($featured_videos)): ?>
             <?php $this->repeatingBlock('video.phtml', array_slice($featured_videos, 0, 4)); ?>
@@ -77,8 +77,8 @@
 
 <!-- Begin Recent Videos -->
 <div class="recent-videos">
-
-    <h1><?=Language::getText('recent_videos')?></h1>
+    <!-- <h1><?=Language::getText('recent_videos')?></h1> -->
+    <h1>Latest Films</h1>
     <div class="video-list">
         <?php if (!empty ($recent_videos)): ?>
             <?php $this->repeatingBlock('video.phtml', array_slice($recent_videos, 0, 4)); ?>
