@@ -22,7 +22,7 @@
 
                 <?php if ($loggedInUser): ?>
 
-                    <a href="<?=HOST?>/account/" title="<?=Language::GetText('account')?>">Profile<!-- <?=Language::GetText('account')?> --></a>
+                    <a href="<?=HOST?>/account/" title="<?=Language::GetText('account')?>">My Profile<!-- <?=Language::GetText('account')?> --></a>
                     <?php if ($this->getService('User')->checkPermissions('admin_panel', $loggedInUser)): ?>
                         <a href="<?=HOST?>/cc-admin/" title="<?=Language::GetText('admin_panel')?>"><?=Language::GetText('admin_panel')?></a>
                     <?php endif ?>
