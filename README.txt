@@ -1,8 +1,8 @@
+__________________________
 Frontend for IndiePlat
-
-
-
-
+__________________________
+A video on demand service
+__________________________
 
 -------------------
 SERVER REQUIREMENTS
