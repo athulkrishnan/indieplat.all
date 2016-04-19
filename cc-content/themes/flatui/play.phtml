@@ -19,6 +19,9 @@ $this->setLayout('full');
 
         <div class="alert hidden"></div>
 
+        <!-- BEGIN Player Backup-->
+        <!-- <video id="video-player" class="video-js vjs-sublime-skin" data-setup='{ "plugins" : { "resolutionSelector" : { "default_res" : "720" } }, "controls": true, "autoplay": true, "preload": "auto" }' width="auto" height="auto" poster="<?=$config->thumbUrl?>/<?=$video->filename?>.jpg"> -->
+
 
 
         <!-- BEGIN Video Player -->
@@ -36,7 +39,7 @@ $this->setLayout('full');
         
         <?php else: ?>
             <div class="video-player-container">
-                <video id="video-player" class="video-js vjs-sublime-skin" data-setup='{ "plugins" : { "resolutionSelector" : { "default_res" : "720" } }, "controls": true, "autoplay": true, "preload": "auto" }' width="auto" height="auto" poster="<?=$config->thumbUrl?>/<?=$video->filename?>.jpg">
+                <video id="video-player" class="video-js" data-setup='{ "plugins" : { "resolutionSelector" : { "default_res" : "720" } }, "controls": true, "autoplay": true, "preload": "auto" }' width="auto" height="auto" poster="<?=$config->thumbUrl?>/<?=$video->filename?>.jpg">
                     <source src="<?=$config->h264Url?>/<?=$video->filename?>.mp4" type="video/mp4" data-res="720" />
                     <?php if ($webmEncodingEnabled): ?>
                         <source src="<?=$config->webmUrl?>/<?=$video->filename?>.webm" type="video/webm" />
