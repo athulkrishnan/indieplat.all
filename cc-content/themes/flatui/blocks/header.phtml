@@ -73,8 +73,25 @@
                                 </button>
                             </form> -->
 
-
                             <!-- BEGIN Search Form -->
+                            <!-- <div class="search-form col-md-offset-2 col-md-4 col-xs-12">
+                                <form action="<?=HOST?>/search/" method="post">
+                                    <div class="autocomplete-container">
+                                        <div class="input-group">
+                                            <input placeholder="<?=Language::GetText('search_text')?>" class="form-control" type="text" name="keyword" />
+                                            <div class="input-group-btn">
+                                                   <button type="submit" class="btn btn-default">
+                                                        <span class="glyphicon glyphicon-search"></span>
+                                                    </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="submitted_search" value="TRUE" />
+                                </form>
+                            </div>
+ -->                            <!-- END Search Form -->
+
+
                             <form class="navbar-form navbar-left" role="search" action="<?=HOST?>/search/" method="post">
                                 <div class="autocomplete-container">
                                     <div class="form-group">
@@ -87,8 +104,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                <input type="hidden" name="submitted_search" value="TRUE" />
                             </form>
-                            <!-- END Search Form -->
+
                         </ul>
                     </div>
                 </nav>
