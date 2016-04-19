@@ -3,9 +3,45 @@
 <?php if ($logout): ?>
     <div class="alert alert-success"><?=Language::getText('success_logout')?></div>
 <?php endif; ?>
+
+<?php if ($logout): ?>
+    <div class="alert alert-success"><?=Language::getText('success_logout')?></div>
+<?php endif; ?>
 <div class="container-fluid">
         <div class="row">
             <div class="col-md-12" style="background-image: url(<?=$this->options->themeUrl?>/assets/img/minions.jpg); height: 100vh;">
 
             </div>
         </div>
+
+
+
+<!-- Begin Featured Videos -->
+<div class="featured-videos">
+
+    <h1><?=Language::getText('featured_videos')?></h1>
+    <div class="video-list">
+        <?php if (!empty ($featured_videos)): ?>
+            <?php $this->repeatingBlock('video.phtml', array_slice($featured_videos, 0, 4)); ?>
+        <?php else: ?>
+            <div class="block"><strong><?=Language::getText('no_videos')?></strong></div>
+        <?php endif; ?>
+    </div>
+
+</div>
+<!-- End Featured Videos -->
+
+<!-- Begin Recent Videos -->
+<div class="recent-videos">
+
+    <h1><?=Language::getText('recent_videos')?></h1>
+    <div class="video-list">
+        <?php if (!empty ($recent_videos)): ?>
+            <?php $this->repeatingBlock('video.phtml', array_slice($recent_videos, 0, 4)); ?>
+        <?php else: ?>
+            <div class="block"><strong><?=Language::getText('no_videos')?></strong></div>
+        <?php endif; ?>
+    </div>
+
+</div>
+<!-- End Recent Videos --> 
